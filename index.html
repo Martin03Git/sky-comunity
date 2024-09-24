@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sky-Comunity</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h1 id="title">Gaming Survey for Player Preferences and Suggestions</h1>
+  <p id="description">Thank you for participating in this survey! We are interested in knowing your preferences as a player of The Elder Scrolls V: Skyrim. Please take a moment to answer the following questions. Your responses are valuable to us in understanding what makes the Skyrim gaming experience more enjoyable and satisfying.</p>
+  <form action="POST" action="https://register-demo.freecodecamp.org" id="survey-form">
+    <fieldset>
+      <h2>Player Bio ( required ) </h2>
+      <label for="name" id="name-label">Name : <input name="name" type="text" id="name" required placeholder="John"></label>
+      <label for="email" id="email-label">E-Mail : <input name="email" type="email" id="email" required placeholder="john@gmail.com"></label>
+      <label for="gender" id="gender-label">Gender : <input type="radio" name="gender" class="gender" value="male">Male <input type="radio" name="gender" class="gender" value="female">Female</label>
+      <label for="age" id="number-label">Age : <input type="number" name="age" id="number" min="17" max="120" required placeholder="input your age here"></label>
+    </fieldset>
+    <fieldset>
+      <h2 id="title">Character Building</h2>
+      <label for="races">Which race will you choose?
+        <select name="races" id="dropdown" required>
+          <option value="">( Select One )</option>
+          <option value="1">Nord</option>
+          <option value="2">Imperial</option>
+          <option value="3">Breton</option>
+          <option value="4">Redguard</option>
+          <option value="5">Khajiit</option>
+          <option value="6">Argonian</option>
+          <option value="7">Wood Elf ( Bosmer )</option>
+          <option value="8">High Elf ( Altmer )</option>
+          <option value="9">Dark Elf ( Dunmer )</option>
+          <option value="10">Orc ( Orsimer )</option>
+        </select>
+      </label> 
+      <label for="classes">Which class will you choose?
+        <select name="classes" id="classes" required>
+          <option value="">( Select One )</option>
+          <option value="1">Stealt Archer ( Skill : Archery, Sneak, Light Armor )</option>
+          <option value="2">Two-Handed Warrior ( Skill : Two-Handed, Heavy Armor, Smitthing )</option>
+          <option value="3">Destruction Mage ( SKill : Destruction, Restoration, Enchanting )</option>
+          <option value="4">Sword and Shield Knight ( Skill : One-Handed, Block, Heavy Armor )</option>
+          <option value="5">Assassin ( Skill : Sneak, One-Handed, Illusion )</option>
+          <option value="6">Battlemage ( Skill : Destruction, Conjuration, Heavy Armor )</option>
+          <option value="7">Spellsword ( SKill : One-Handed, Destruction, Alteration )</option>
+          <option value="8">Archer/Thief ( SKill : Archery, Sneak, Lockpicking )</option>
+          <option value="9">Paladin ( Skill : Restoration, One-Handed, Heavy Armor )</option>
+          <option value="10">Witchhunter ( SKill : Archery, Alchemy, Illusion )</option>
+        </select>
+      </label>
+      <p>Apart from the main skills in the class you have chosen, which of the following skills will you improve?</p>
+      <div class="adds-skill-container">
+        <div class="additional-skill">
+          <img src="https://static.wikia.nocookie.net/elderscrolls/images/0/03/Restoration_icon.png" alt="Restoration">
+          <p class="skill-desc">Restoration</p>
+          <input type="checkbox" name="Restoration" id="Restoration" value="Restoration">
+        </div>
+        <div class="additional-skill">
+          <img src="https://static.wikia.nocookie.net/elderscrolls/images/3/3d/Destruction_icon.png" alt="Destruction">
+          <p class="skill-desc">Destruction</p>
+          <input type="checkbox" name="Destruction" id="Destruction" value="Destruction">
+        </div>
+        <div class="additional-skill">
+          <img src="https://static.wikia.nocookie.net/elderscrolls/images/6/67/Conjuration_icon.png" alt="Conjuration">
+          <p class="skill-desc">Conjuration</p>
+          <input type="checkbox" name="Conjuration" id="Conjuration" value="Conjuration">
+        </div>
+        <div class="additional-skill">
+          <img src="https://static.wikia.nocookie.net/elderscrolls/images/a/af/Alteration_icon.png" alt="Alteration">
+          <p class="skill-desc">Alteration</p>
+          <input type="checkbox" name="Alteration" id="Alteration" value="Alteration">
+        </div>
+        <div class="additional-skill">
+          <img src="https://static.wikia.nocookie.net/elderscrolls/images/4/41/Illusion_icon.png" alt="Illusion">
+          <p class="skill-desc">Illusion</p>
+          <input type="checkbox" name="Illusion" id="Illusion" value="Illusion">
+        </div>
+        <div class="additional-skill">
+          <img src="https://static.wikia.nocookie.net/elderscrolls/images/7/74/Enchanting_icon.png" alt="Enchanting">
+          <p class="skill-desc">Enchanting</p>
+          <input type="checkbox" name="Enchanting" id="Enchanting" value="Enchanting">
+        </div>
+        <div class="additional-skill">
+          <img src="https://static.wikia.nocookie.net/elderscrolls/images/d/dd/Smithing_icon.png" alt="Smitthing">
+          <p class="skill-desc">Smitthing</p>
+          <input type="checkbox" name="Smitthing" id="Smitthing" value="Smitthing">
+        </div>
+        <div class="additional-skill">
+          <img src="https://static.wikia.nocookie.net/elderscrolls/images/4/43/Heavy_Armor_icon.png" alt="Heavy Armor">
+          <p class="skill-desc">Heavy Armor</p>
+          <input type="checkbox" name="Heavy Armor" id="Heavy Armor" value="Heavy Armor">
+        </div>
+        <div class="additional-skill">
+          <img src="https://static.wikia.nocookie.net/elderscrolls/images/5/57/Block_icon.png" alt="Block">
+          <p class="skill-desc">Block</p>
+          <input type="checkbox" name="Block" id="Block" value="Block">
+        </div>
+        <div class="additional-skill">
+          <img src="https://static.wikia.nocookie.net/elderscrolls/images/4/4f/Two-handed_icon.png" alt="Two-Handed">
+          <p class="skill-desc">Two-Handed</p>
+          <input type="checkbox" name="Two-Handed" id="Two-Handed" value="Two-Handed">
+        </div>
+        <div class="additional-skill">
+          <img src="https://static.wikia.nocookie.net/elderscrolls/images/f/f8/One-handed_icon.png" alt="One-Handed">
+          <p class="skill-desc">One-Handed</p>
+          <input type="checkbox" name="One-Handed" id="One-Handed" value="One-Handed">
+        </div>
+        <div class="additional-skill">
+          <img src="https://static.wikia.nocookie.net/elderscrolls/images/6/66/Archer_icon.png" alt="Archery">
+          <p class="skill-desc">Archery</p>
+          <input type="checkbox" name="Archery" id="Archery" value="Archery">
+        </div>
+        <div class="additional-skill">
+          <img src="https://static.wikia.nocookie.net/elderscrolls/images/f/f4/Light_Armor_icon.png" alt="Light Armor">
+          <p class="skill-desc">Light Armor</p>
+          <input type="checkbox" name="Light Armor" id="Light Armor" value="Light Armor">
+        </div>
+        <div class="additional-skill">
+          <img src="https://static.wikia.nocookie.net/elderscrolls/images/5/53/Sneak_icon.png" alt="Sneak">
+          <p class="skill-desc">Sneak</p>
+          <input type="checkbox" name="Sneak" id="Sneak" value="Sneak">
+        </div>
+        <div class="additional-skill">
+          <img src="https://static.wikia.nocookie.net/elderscrolls/images/d/dc/Lockpicking_icon.png" alt="Lockpicking">
+          <p class="skill-desc">Lockpicking</p>
+          <input type="checkbox" name="Lockpicking" id="Lockpicking" value="Lockpicking">
+        </div>
+        <div class="additional-skill">
+          <img src="https://static.wikia.nocookie.net/elderscrolls/images/9/93/Pickpocket_icon.png" alt="Pickpocket">
+          <p class="skill-desc">Pickpocket</p>
+          <input type="checkbox" name="Pickpocket" id="Pickpocket" value="Pickpocket">
+        </div>
+        <div class="additional-skill">
+          <img src="https://static.wikia.nocookie.net/elderscrolls/images/d/dd/Speechcraft_icon.png" alt="Speech">
+          <p class="skill-desc">Speech</p>
+          <input type="checkbox" name="Speech" id="Speech" value="Speech">
+        </div>
+        <div class="additional-skill">
+          <img src="https://static.wikia.nocookie.net/elderscrolls/images/6/6a/Alchemy_icon.png" alt="Alchemy">
+          <p class="skill-desc">Alchemy</p>
+          <input type="checkbox" name="Alchemy" id="Alchemy" value="Alchemy">
+        </div>
+      </div>
+    </fieldset>
+    <fieldset>
+      <h2>Additional Feedback</h2>
+      <label for="feedback">Do you have any additional suggestions or feedback regarding your Skyrim gaming experience?
+        <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="Write your criticisms and suggestions here."></textarea>
+      </label>
+    </fieldset>
+    <label for="terms-and-conditions" class="terms">
+      <input class="inline" id="terms-and-conditions" value="terms" type="checkbox" required name="terms-and-conditions" /><p>I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></p>
+    </label>
+    <input type="submit" value="Submit" id="submit"/>
+  </form>
+</div>
+</body>
+</html>
